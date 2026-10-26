@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1ea;
+    color: #333;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* MENU */
+
+nav {
+    background: #d49a3a;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav button {
+    border: none;
+    background: white;
+    color: #243b53;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav button:hover {
+    background: #243b53;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* PAGINE */
+
+.page {
+    display: none;
+    min-height: 550px;
+    padding: 60px 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+.content {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    color: #243b53;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    color: #b56b20;
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* BOX */
+
+.info-box {
+    background: #f7ead2;
+    border-left: 6px solid #d49a3a;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.info-box ul {
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+/* PIATTI */
+
+.dish {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.dish img {
+    width: 380px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dish div {
+    flex: 1;
+}
+
+
+/* RINGRAZIAMENTI */
+
+.thank-you {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    padding: 70px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.thank-you h2 {
+    font-size: 40px;
+}
+
+.student {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 400px;
+    background: #f7ead2;
+    border-radius: 12px;
+}
+
+.student h3 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.student p {
+    margin-bottom: 0;
+}
+
+.flag {
+    font-size: 50px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #243b53;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+/* TELEFONO */
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .dish {
+        flex-direction: column;
+    }
+
+    .dish img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+}
